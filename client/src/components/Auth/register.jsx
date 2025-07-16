@@ -20,10 +20,10 @@ export default function Register() {
       <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-md">
         <div className="flex flex-col items-center">
           <div className="bg-blue-900 rounded-full p-3 mb-4">
-            <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth="2"
+            <span className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth="2"
               viewBox="0 0 24 24">
-              <path d="M4 17l6-6 4 4 8-8" />
-            </svg>
+              <img src="https://www.flaticon.com/free-icons/chef"  alt="Chef Icon" className="h-6 w-6" />
+            </span>
           </div>
           <h2 className="text-2xl font-bold mb-1">Create Account</h2>
           <p className="text-gray-600 mb-6 text-center">
@@ -68,7 +68,7 @@ export default function Register() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <span className="absolute right-3 top-3 text-gray-400 cursor-pointer">
+              <span className="absolute right-3 top-3 text-gray-400 cursor-pointer ">
                 👁️
               </span>
             </div>

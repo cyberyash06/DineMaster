@@ -53,7 +53,7 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <span className="absolute right-3 top-3 text-gray-400 cursor-pointer">
+              <span className="absolute right-3 top-3 text-gray-400 cursor-pointer fill-neutral-600">
                 👁️
               </span>
             </div>
