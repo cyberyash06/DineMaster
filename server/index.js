@@ -22,3 +22,5 @@ app.listen(PORT, () => {
 });
 
 app.use("/api/users", userRoutes);
+
+
