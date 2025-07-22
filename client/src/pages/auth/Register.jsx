@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { registerUser } from '../lib/api/api';
-import AuthLayout from '../components/AuthLayout';
-import Input from '../components/Input';
-import Button from '../components/Button';
-import PasswordInput from '../components/PasswordInput';
+import { registerUser } from '../../lib/api/api';
+import AuthLayout from '../../components/Layouts/AuthLayout';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import PasswordInput from '../../components/PasswordInput';
 
 export default function Register() {
   const [form, setForm] = useState({
