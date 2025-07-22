@@ -1,18 +1,21 @@
-// src/pages/Dashboard.jsx
-import React from 'react';
+export default function Dashboard() {
+  const stats = [
+    { label: "Total Users", value: 128, color: "bg-blue-500" },
+    { label: "Orders Today", value: 45, color: "bg-green-500" },
+    { label: "Revenue", value: "$3,420", color: "bg-yellow-500" },
+  ];
 
-const Dashboard = () => {
   return (
-    <div className="p-6 flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Your Dashboard</h1>
-      <p className="text-lg mb-8">
-        You are logged in as an Admin.
-      </p>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Go to Admin Panel
-      </button>
+    <div className="grid gap-6">
+      <h1 className="text-2xl font-bold mb-4">Dashboard Overview</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {stats.map((s) => (
+          <div key={s.label} className={`${s.color} text-white p-4 rounded-lg shadow`}>
+            <div className="text-3xl font-bold">{s.value}</div>
+            <div className="text-sm">{s.label}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
-};
-
-export default Dashboard;
+}
